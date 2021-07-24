@@ -61,6 +61,9 @@ Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
+:nnoremap <C-g> :NERDTreeToggle<CR> " NERDTree plugin specific commands
+
+
 " noremap ; :           " Use ; in addition to : to type commands.
 
 " noremap <c-u> :w<cr>  " Save using <Ctrl-u> (u stands for update).
