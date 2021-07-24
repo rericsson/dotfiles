@@ -29,7 +29,7 @@ noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 
 set foldmethod=indent           " Indentation-based folding.
-autocmd BufRead * normal zR     " Open files without folds"
+autocmd BufRead * normal zR     " Open files without folds
 
 set wildmenu                    " Enable enhanced tab autocomplete.
 set wildmode=list:longest,full  " Complete till longest string, then open menu.
@@ -52,6 +52,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()  " Manage plugins with vim-plug.
+
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
