@@ -11,6 +11,14 @@ set shiftwidth=4           " Number of spaces to use for autoindent.
 set backspace=2            " Fix backspace behavior on most terminals.
 
 colorscheme murphy         " Change a colorscheme.
+set visualbell             " Flash screen instaed of bell sound"
+
+" Maintain undo history between sessions
+set undofile
+if !isdirectory(expand("$HOME/.vim/undodir"))
+        call mkdir(expand("$HOME/.vim/undodir"), "p")
+endif
+set undodir=$HOME/.vim/undodir
 
 " => Chapter 2: Advanced Movement and Navigation ---------------------- {{{
 
@@ -21,6 +29,7 @@ noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 
 set foldmethod=indent           " Indentation-based folding.
+autocmd BufRead * normal zR     " Open files without folds"
 
 set wildmenu                    " Enable enhanced tab autocomplete.
 set wildmode=list:longest,full  " Complete till longest string, then open menu.
