@@ -3,7 +3,7 @@ Portable Configuration Files
 
 These can be downloaded to new machines and used with symlinks
 
-from the $HOME directory, run
+From the $HOME directory, run
 ```
 git pull https://github.com/rericsson/dotfiles
 ```
