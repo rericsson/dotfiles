@@ -1,7 +1,7 @@
 # dotfiles
-portable configuration files
+Portable Configuration Files
 
-these can be downloaded new machines and used with symlinks
+These can be downloaded to new machines and used with symlinks
 
 from the $HOME directory, run
 ```
